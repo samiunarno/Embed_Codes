@@ -1,3 +1,4 @@
+#include <SoftwareSerial.h>
 int L_EN_FOR_ONE=3;
 int R_EN_FOR_ONE=4;
 int L_PWM_FOR_ONE=5;
@@ -12,6 +13,10 @@ int speed_max = 255; //
 
 int speed_left = speed_max; // set both motors to maximum speed
 int speed_right = speed_max;
+
+
+//Code By Samiun Mahmud Arno [Contact For Collaboration]
+
 
 void left();
 void right();
@@ -60,14 +65,14 @@ if (Serial.available() > 0) {
        incomingByte='*';}
      break;
     
-      case 'F':
+      case 'R':
        
     {   right();
       // Serial.println("Backward\n");
        incomingByte='*';}
      break;
      
-     case 'R':
+     case 'F':
      // turn right
      {  
        forward(); 
@@ -150,25 +155,25 @@ if (Serial.available() > 0) {
        Serial.println("Speed full \n");
        incomingByte='*';}
      break; 
-        case 'H':
+        case 'J':
       { 
        back_right();
        Serial.println("Speed full \n");
        incomingByte='*';}
      break;
-      case 'I':
+      case 'H':
       { 
        back_left();
        Serial.println("Speed full \n");
        incomingByte='*';}
      break;
-      case 'G':
+      case 'I':
       { 
        forward_right();
        Serial.println("Speed full \n");
        incomingByte='*';}
      break;
-      case 'J':
+      case 'G':
       { 
       forward_left();
        Serial.println("Speed full \n");
