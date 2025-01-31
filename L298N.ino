@@ -1,6 +1,4 @@
-/* Obstacle Avoiding Robot Using Ultrasonic Sensor and Arduino NANO
- * Circuit Digest(www.procreativehub.com) YouTube: Technical Tamizha
- */
+//THese is only for Ultrasonic Sensor Auto CAr 
 
 int trigPin = 3;      // trig pin of HC-SR04
 int echoPin = 2;      // Echo pin of HC-SR04
