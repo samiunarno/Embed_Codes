@@ -57,7 +57,7 @@ if (Serial.available() > 0) {
        incomingByte='*';}
      break;
      
-     case 'L':
+     case 'R':
       
      {  left();
        
@@ -65,7 +65,7 @@ if (Serial.available() > 0) {
        incomingByte='*';}
      break;
     
-      case 'R':
+      case 'L':
        
     {   right();
       // Serial.println("Backward\n");
